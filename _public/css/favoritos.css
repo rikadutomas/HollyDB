@@ -1,0 +1,91 @@
+
+.fvr-box{
+    display:flex;
+    max-width:1000px;
+    width:100%;
+    /* background:rgb(65, 65, 65); */
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255), rgba(172, 243, 255, 0.308)),url("../img/nebula.jpg");
+    padding:20px;
+    margin:10px 20px;
+    /* color:#fff; */
+    
+}
+.fvr-detalhes-box{
+    width:100%;
+    flex-flow: space-between;
+}
+.fvr-img-box{
+    margin-right:20px;
+}
+
+.fvr-img-box img{
+    width:150px;
+    height:200px;
+}
+
+.fvr-titulo-box{
+    display: flex;
+    flex-flow: space-between;
+    justify-content: space-between;
+
+    border-bottom:1px solid #4b6886;
+}
+
+.fvr-titulo{
+    display: flex;
+    flex-flow: column;
+    width:100%;
+    justify-content: space-between;
+    padding:10px;
+
+}
+
+.fvr-titulo1{
+    /* color:#eeff00; */
+    color:#282646;
+    font-weight: bold;
+}
+
+.fvr-titulo1 span{
+    padding-left:10px;
+    /* color: #fff; */
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.fvr-titulo2{
+    font-size: 0.8em;
+    font-weight: bold;
+    color:rgb(129, 129, 129);
+}
+.fvr-estrela img{
+    width:30px;
+    padding:10px;
+    
+    
+}
+.fvr-table-box{
+    padding:5px;
+}
+
+.fvr-table th{
+    text-align:left;
+    vertical-align: top;
+    color:#282646;
+    font-weight: bold;
+}
+.fvr-table td{
+    padding-left:30px;
+    font-weight: 300;
+}
+
+.search-header{
+    display: flex;
+    width:100%;
+    color: white;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:30px;
+    border-bottom:1px solid white;
+}

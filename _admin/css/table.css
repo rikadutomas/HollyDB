@@ -1,0 +1,357 @@
+.content-table{
+    margin-left:20px;
+    max-width:90%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin-top:5px;
+    border-radius: 5px 5px 0 0;
+    width:825px;
+    overflow: hidden;
+    font-size:12px;
+}
+
+.content-table-users{
+    margin-left:20px;
+    max-width:90%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin-top:5px;
+    border-radius: 5px 5px 0 0;
+    width:710px;
+    overflow: hidden;
+    font-size:12px;
+}
+
+.content-table-profs{
+    margin-left:20px;
+    max-width:90%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin-top:5px;
+    border-radius: 5px 5px 0 0;
+    width:270px;
+    overflow: hidden;
+    font-size:12px;
+}
+
+.content-table table,
+.content-table-users table,
+.content-table-profs table{
+    text-align: left;
+}
+
+.content-table thead{
+    display:block;
+    width:825px;
+}
+
+.content-table-users thead{
+    display:block;
+    width:710px;
+}
+
+.content-table-profs thead{
+    display:block;
+    width:270px;
+}
+
+.content-table thead tr,
+.content-table-users thead tr,
+.content-table-profs thead tr{
+    background-color: #2F323A;
+    color:#fff;
+    text-align: left;
+
+}
+
+.content-table tbody{
+    display:block;
+    height:500px;
+    width:100%;
+    overflow-y:scroll;
+    border-bottom: 2px solid #2F323A;
+
+}
+
+.content-table-users tbody{
+    display:block;
+    height:500px;
+    width:100%;
+    overflow-y:scroll;
+    border-bottom: 2px solid #2F323A;
+
+}
+
+.content-table-profs tbody{
+    display:block;
+    height:500px;
+    width:100%;
+    overflow-y:scroll;
+    border-bottom: 2px solid #2F323A;
+
+}
+
+.content-table th,
+.content-table-users th,
+.content-table-profs th {
+    padding: 10px 0;
+}
+
+.content-table td,
+.content-table-users td,
+.content-table-profs td {
+    padding: 3px 0;
+    height:20px;
+}
+
+.content-table tbody tr,
+.content-table-users tbody tr,
+.content-table-profs tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table tbody tr:nth-of-type(even),
+.content-table-users tbody tr:nth-of-type(even),
+.content-table-profs tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:hover,
+.content-table-users tbody tr:hover,
+.content-table-profs tbody tr:hover {
+    font-weight: bold;
+    background-color:#00e9bb;
+}
+
+/* ==================================================================== */
+
+.table-buttons{
+    padding:3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border:2px solid #2F323A;
+    background-color: #2F323A;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+#btn-filter-active{
+    padding:3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border:2px solid #2F323A;
+    background-color: #2F323A;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.table-buttons:hover,
+#btn-filter-active:hover{
+    background-color: #19B3D3;
+}
+
+#btn-filter-active .active{
+    background-color: #19d32f;
+}
+
+#tbl-filme-id,
+#tbl-filme-ano,
+#tbl-filme-duracao,
+#tbl-filme-butoes{
+    text-align: center;
+}
+
+#filmes-tblfilmes tr.active{
+    color:#91edff;
+    background-color: #17505c;
+}
+
+#filmes-tblfilmes tr.tbl-filme-activo-false{
+    color:#ed6014;
+}
+
+.aside-filme-detalhes table td:nth-of-type(odd){
+    font-weight: bold;
+}
+
+#aside-filme-detalhes-imagem{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+#tbl-user-detalhes-favoritos-bd{
+    height:250px;
+    overflow-y:scroll;
+}
+#tbl-user-detalhes-favoritos-hd table thead tr th{
+    background-color: #2F323A;
+    color:#fff;
+    text-align: left;
+    padding:5px;
+    margin:0;
+    border:none;
+}
+
+#tbl-user-detalhes-favoritos-bd table tbody tr td{
+    text-align: left;
+    padding:5px;
+    margin:0;
+    border:none;
+    font-size: 11px;
+}
+
+#tbl-user-detalhes-favoritos-bd table tbody tr:nth-of-type(even){
+    background-color: #eee;
+}
+
+#tbl-user-detalhes-favoritos-hd table thead tr th:nth-of-type(odd){
+    text-align: center;
+}
+
+#tbl-user-detalhes-favoritos-bd table tbody tr td:nth-of-type(odd){
+    text-align: center;
+}
+
+#tbl-user-detalhes-favoritos-bd table tbody tr td:nth-of-type(even){
+    padding-left:10px;
+}
+
+#tbl-user-detalhes-favoritos-bd table tbody tr td{
+    justify-content: center;
+    padding:5px;
+}
+
+#tbl-user-detalhes-favoritos-bd .tbl-del-container:hover{
+    background-color: #edd414;
+}
+
+#user-btn-spacer{
+    padding:8px;
+}
+
+.btn-neutral, .btn-bad, .btn-good{
+    padding:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    background: #2F323A;
+    text-decoration: none;
+    border:0;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.btn-neutral:hover{
+    background: #19B3D3;
+}
+
+.btn-bad:hover{
+    background: #ff0000;
+}
+
+.btn-good:hover{
+    background: #006b1b;
+}
+
+#user-fav-spacer{
+    height:275px;
+}
+
+/* ========================FILME DETALHES============================ */
+.aside-filme{
+    width:300px;
+    min-height:480px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.aside-filme-detalhes{
+    border:1px solid #22242a7b;
+    border-radius: 5px;
+    width:300px;
+    min-height:480px;
+    font-size: 12px;
+    padding:5px;
+    padding-top:20px;
+}
+
+.aside-filme-detalhes td{
+    padding-bottom: 5px;
+    color:#22242A;
+    vertical-align: top;
+}
+
+.aside-prof-detalhes{
+    border:1px solid #22242a7b;
+    border-radius: 5px;
+    width:300px;
+    min-height:160px;
+    font-size: 12px;
+    padding:5px;
+    padding-top:20px;
+}
+
+.aside-prof-detalhes td{
+    padding-bottom: 5px;
+    color:#22242A;
+    vertical-align: top;
+}
+
+/* PROFS */
+
+.tbl-prof td:nth-of-type(odd){
+    width:50px;
+    text-justify: center;
+}
+
+.tbl-prof td input{
+    border:1px solid #bbb;
+    border-top:0;
+}
+
+.btn-tbl-delete{
+    background: none;
+    color: inherit;
+    margin:0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    transform: background;
+    transition: 200ms;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-tbl-delete:hover{
+    background-color: #fc3e3e;
+}
+
+.tbl-prof-modal{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+#profs-tblprofs tr.active{
+    color:#91edff;
+    background-color: #17505c;
+}
+

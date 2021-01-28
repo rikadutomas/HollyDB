@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+
+
+/*
+cores
+azul contorno 67,101,239
+
+azul 2D3E50
+cinza 333333
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Monserrat', sans-serif;
+
+}
+
+html, body{
+    background-color: #000;
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0,0.6), rgba(0, 0, 0, 0.6)),url("../img/starts3.jpg");
+    height:100%;
+}
+
+.container{
+    min-height:100%;
+    position:relative;
+}
+
+.main{
+    max-width:1000px;
+    margin:0 auto;
+    border:0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color:white;
+}
+
+.footer-bar{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color:white;
+}
+
+.footer-logo{
+    display:flex;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1em;
+    font-weight:lighter;
+}
+
+.nav-logo{
+    display:flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: .5rem;
+    margin-left: 1rem;   
+}
+
+.nav-logo img, .footer-logo img{
+    height:35px;
+    margin-right:10px;
+}
+
+.nav-logo h1{
+    display:none;
+}
+.nav-logo span{
+    color:rgb(161, 165, 216);
+}
+
+
+.nav-links{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul {
+    display:flex; 
+}
+
+.nav-links li {
+    list-style: none;
+    transition: ease-in-out;
+    transition-duration: 150ms;
+
+}
+
+.nav-links img{
+    height:20px;
+    margin-right: 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-links li:hover {
+    background-color: rgb(67,101,239); 
+}
+
+.nav-search{
+    display:flex;
+    background:#fff;
+    margin:5px;
+    padding:3px;
+    border-radius: 5px;
+    border:1px solid rgb(67,101,239);
+    width:40%;
+    min-width:300px;
+}
+
+.nav-search input{
+    display:flex;
+    width:70%;
+    border:0;
+    padding-left:10px;
+}
+
+.nav-search input:focus{
+    border:0;
+}
+
+.nav-search a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px;
+    justify-content: center;
+}
+
+.nav-search a:hover{
+    border-radius: 10px;
+    background: radial-gradient(#fff,rgba(168, 168, 168, 0.11),#3333333a);
+}
+
+.nav-search img{
+    width:22px;
+}
+
+.nav-search select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding:3px;
+    border-right:2px solid #555
+}
+
+.nav-search option{
+    font-family:'Poppins', sans-serif ;
+    color:#fff;
+    background:#555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login-state{
+    display:none;
+}
+.logout-state{
+    display:flex;
+}
+
+
+
+
+/*==================== Media ========================================*/
+
+@media (max-width: 700px){
+    .toggle-button{
+        display:flex;
+    }
+
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links{
+        display: none;
+        width:100%;
+        flex-direction: column;
+        
+    }
+
+    .nav-search{
+        display:none;
+        width:75%;
+        margin:auto;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .nav-links li {
+        text-align: center;
+        margin-top:5px;
+    }
+
+    .nav-links li a {
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-search.active{
+        display:flex;
+    }
+}

@@ -1,0 +1,118 @@
+.opcoes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opcoes-user-header{
+    max-width:1000px;
+    width:100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.opcoes-user-header h1{
+    color:#fff
+}
+
+.opcoes-user-box{
+    display:flex;
+    max-width:1000px;
+    width:100%;
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255), rgba(172, 243, 255, 0.308)),url("../img/nebula.jpg");
+    padding:20px;
+    margin:10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.opcoes-user-box h4{
+    color:#000;
+}
+.opcoes-user-box button,.opcoes-password button{
+    color:#ccc;
+    font-size: 14px;
+    font-weight:bold;
+    width:100px;
+    padding:10px 0;
+    background-color: #333;
+    border:none;
+    border-radius:5px;
+    transition: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.opcoes-user-box button:hover, .opcoes-password button:hover{
+    background-color: rgb(67,101,239);
+    color:#fff;
+}
+.opcoes-title1{
+    color:#000;
+}
+.opcoes-modal-body *{
+    color:#000;
+    max-width:500px;
+    /* width:100%; */
+}
+
+.opcoes-modal-body{
+    display:flex;
+    flex-direction: row;
+}
+
+.opcoes-password{
+    padding:20px;
+    margin:10px 20px;
+    display:flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.opcoes-password h4{
+    margin-right:20px;
+}
+.opcoes-password input{
+    padding:5px;
+    text-decoration: none;
+}
+
+.opcoes-password h5{
+    color:rgb(130, 2, 2);
+}
+
+.opcoes-modal-body-success, .opcoes-modal-body-terminar {
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opcoes-modal-body-terminar {
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.opcoes-terminar-success{
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.opcoes-terminar-success h4{
+    padding:5px;
+}
+
+.opcoes-terminar-success img{
+    width:300px;
+}
+
+.opcoes-terminar-header > h1,h3{
+    text-align: center;
+}

@@ -1,0 +1,187 @@
+#form-filmes-main form{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    max-width:1200px;
+    padding-left:20px;
+}
+
+.filmes-form-genero,.form-filmes-section3{
+    width:475px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    margin:10px 0;
+    padding:20px;
+    background:#eee;
+}
+
+.form-filmes-section1,
+.form-filmes-section2{
+    padding-top:20px;
+
+}
+
+.form-filmes-section1 input,
+.form-filmes-section2 input,
+.form-filmes-section3 input{
+    width:400px;
+    border:none;
+    border:1px solid #bbb;
+    border-top:0;
+}
+
+.form-filmes-section1 input:focus,
+.form-filmes-section2 input:focus,
+.form-filmes-section3 input:focus{
+    outline: none;
+    background-color:#d5f6fc;
+
+}
+
+#input-filme-ano, #input-filme-duracao{
+    width:50px;
+}
+
+.form-filmes-section2 select{
+    width:100px;
+    font-size: 12px;
+}
+
+.td-vertical-top{
+    vertical-align: top;
+}
+
+.form-filmes-section2 textarea{
+    width:400px;
+    font-size: 12px;
+    resize: none;
+    border: 1px solid #bbb;
+    border-top:0;
+}
+
+.form-filmes-section2 textarea:focus{
+    border-color: #22242A;
+    background-color:#22242a20
+}
+
+.in-text-area-short{
+    width:300px;
+}
+
+#form-filmes-main td{
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#form-filmes-main label{
+    font-size: 14px;
+    color: #22242A;
+}
+
+#input-sinopse input{
+    height:50px;
+}
+
+.filmes-form-genero div{
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #000;
+}
+.filmes-form-genero td{
+    font-size: 12px;
+    padding-right:10px;
+}
+
+.form-filmes-section3 img{
+    width:80px;
+    border:1px solid #ccc;
+}
+
+.td-photo-section{
+    width:180px;
+    display:flex;
+    justify-content: space-between;
+    align-items:top;
+}
+.form-filmes-section4{
+    width:500px;
+    display:flex;
+    justify-content: flex-end;
+    padding:0;
+    margin:0;
+    vertical-align: top;
+}
+
+.form-filmes-section4 button{
+    padding:10px 20px;
+    margin:0 10px;
+    vertical-align: top;
+    background-color: #22242A;
+    color:#ccc;
+    transition: 0.3s;
+    transition-property: background;
+    border:0;
+}
+
+.btn-cancelar:hover{
+    background: #fd0000;
+}
+
+.btn-submeter:hover{
+    background: #006b1b;
+}
+
+#div-in-duracao, #div-in-ano, .in-a-float{
+    display:flex;
+    flex-direction: row;
+}
+
+.tbl-side-functions{
+    margin-bottom: 5px;
+}
+
+#prof-searchbox{
+    padding:5px;
+    border-radius: 3px;
+    border:1px solid #22242a7b;
+    margin-right: 10px;
+}
+
+.tbl-prof-div-inserir{
+    margin-top:10px;
+}
+
+.tbl-prof-div-inserir a{
+    padding:10px 15px;
+}
+
+.in-textbox{
+    border:none;
+    border:1px solid #bbb;
+    font-size: 12px;
+}
+
+.txt-high{
+    height:80px;
+}
+.txt-low{
+    height:30px;
+}
+
+.txt-large{
+    width:80px;
+}
+
+.aside-buttons-group{
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    margin:20px;
+}
+
+.table-buttons.bad:hover{
+    background-color: #fd0000;
+}
+
+.in-locked-blue{
+    background-color:#aff2ff;
+    background-color:#f3f3f3;
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+::placeholder{
+    color: rgb(134, 134, 134);
+}
+html,body{
+    height:100%;
+    width:100%;   
+}
+
+.login-container {
+    display:flex;
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../img/nebula.jpg");
+}
+
+.form-box{
+    width: 380px;
+    height:450px;
+    position: relative;
+    margin: auto ;
+    background-color:#fff;
+    padding: 5px;
+    border:1px solid rgb(155, 155, 155); 
+}
+
+.title-box{
+    position: relative;
+    margin: 10%;
+}
+
+.title-box img{
+    width:150px;
+    display: block;
+    margin:0 auto;
+    
+}
+
+.title-box h1{
+    text-align: center;
+}
+
+.input-group{
+    top:180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    left:50px;  
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background:transparent;
+}
+
+.input-field:invalid {
+    border-color: #999 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.submit-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#006666,#0D192A);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.check-box{
+    margin:30px 10px 30px 0;
+}
+
+#msg-span{
+    color: #777;
+    font-size: 12px;
+    bottom:68px;
+}
+
+#errmsg{
+    font-size: .8em;
+    color:#c90f0f
+}
+
+.tbl-login-modal{
+    display:flex;
+    flex-direction: column;
+    
+}
+.tbl-login-modal-in{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:300px;
+    margin-bottom: 20px;
+}
+
+.dsh-container{
+    display:flex;
+    flex-direction: column;
+    min-width:800px;
+    height:600px;
+    justify-content: center;
+    align-items:center;   
+}
+
+#ficha-tecnica{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ficha-tecnica h2{
+margin: 10px;
+}

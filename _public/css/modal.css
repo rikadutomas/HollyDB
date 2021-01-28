@@ -1,0 +1,152 @@
+.modal{   
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    transition:200ms ease-in-out;
+    border:1px solid #000;
+    border-radius: 10px;
+    z-index:10;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255), rgba(172, 243, 255, 0.308)),url("../img/nebula.jpg");
+    width:700px;
+    max-width:90%;
+}
+
+.modal.active{
+    transform:translate(-50%, -50%) scale(1);
+}
+.modal-header{
+    padding:10px 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.modal-header .title{
+    font-size:1.25rem;
+    font-weight:bold;
+}
+
+.modal-header .close-button {
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:none;
+    font-size: 1.25rem;
+    font-weight:bold;
+    padding:5px 5px;
+}
+
+.modal-body {
+    display:flex;
+    padding:10px 15px;
+}
+
+#overlay{
+    position:fixed;
+    opacity:0;
+    transition:200ms ease-in-out;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgb(0,0,0,0.8);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity:1;
+    pointer-events:all;
+}
+.title1 span{
+    font-weight: normal;
+    padding-left:5px;
+}
+.title2{
+    font-size: 0.8rem;
+    font-weight: normal;
+    color:#333
+}
+.modal-image-movie img{
+    width:150px;
+    height:200px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.modal-table {
+    margin-left:20px;
+}
+
+.modal-table th{
+    vertical-align: top;
+    text-align: left;
+    color:#2D3E50;
+}
+.modal-table td {
+    vertical-align: top;
+    padding-left:5px;
+    font-weight: normal;
+    color:#1b2530;
+}
+.modal-body-video{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+    height:0;
+}
+.modal-body-video iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/*==================== Media ========================================*/
+
+@media (max-width: 500px){
+    .modal{
+        position:absolute;
+        top:72%;
+        left:50%;
+        display:flex;  
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .modal-image-movie img{
+        padding-left:0;
+    }
+    .modal-header{
+        padding:10px 15px;
+        display:column;
+        justify-content:space-between;
+        align-items: center;
+        border-bottom: 1px solid #000;
+    }
+     
+    .modal-body {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:column wrap;
+        justify-content: space-around;
+        padding:10px 15px;
+    }
+
+    .modal-image-movie img{
+        width:150px;
+    }
+
+    .modal-body table{
+        display:flex;
+        flex-direction:column;
+    }
+    .modal-table {
+        margin-left:0;
+    }
+}

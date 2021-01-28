@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------Links--------------------------------------------->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/imageSnippetsMain.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/loginModal.css">
+    <link rel="stylesheet" href="css/favoritos.css">
+    <link rel="stylesheet" href="css/opcoes.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!------------------------------------------------------------------------>
+    <link rel="icon" href="img/h.ico">
+    <title>HOLLY db</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a class="nav-logo" id="navlogo">
+                <img src="img/holly.png" alt="Holly db">
+                <h1>HOLLY<span>db</span></h1>
+            </a>
+            <a class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-search">
+                <select id="search_film">
+                    <option value="procurar">Procurar</option>
+                    <option value="filme">Filme</option>
+                    <option value="actor">Actor</option>
+                    <option value="realizador">Realizador</option>
+                    <option value="genero">Genero</option>
+                </select>
+                <input type="text" id="str-Procura" class="nav-search-input" placeholder = "Procure na Holly DB....">
+                <a href="javascript:makeSearch()"><img src="./img/procura.svg" alt=""></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="javascript:loadFavoritosToMainContainer()"><img src="img/estrela_white.svg" alt="">Favoritos</a></li>
+                    <li class="logout-state"><a href="javascript:loginModal()"><img src="img/enter_icon.svg" alt="">Entrar</a></li>
+                    <li class="login-state"><a href="javascript:loadOpcoesUtilizador()"><img src="img/options_logo.svg" alt="">Opcoes</a></li>
+                    <li class="login-state"><a href="javascript:logoutState()"><img src="img/logout.svg" alt="">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main" id="main">
+        </div>
+        <div class="modal" id="modal"></div>
+        <div id="overlay">
+        </div>
+        <footer class="footer-bar">
+            <div class="footer-logo">
+                <img src="img/holly.png" alt="Holly db">
+                <div class="footer-text">
+                    <h6>Copyright @HollyDB: Ao utilizar aceita os seus termos e condicoes. Nao gosta... nao vem.  </h6>
+                    <h4>Esta página é COVID-FREE</h4>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="module" src="js/modal.js"></script>
+<script type="module" src="js/index.js"></script>
+</html>
+
+
