@@ -1,5 +1,6 @@
 # hollyDB
-Front End Publico e de Administracao para uma base de dados de Filmes
+Front End Publico e de Administracao para uma base de dados de Filmes.
+Modelo totalmente em SPA com injecoes JS por funcao.
 
 ------  3Quotas  ----------------------
 Ricardo
