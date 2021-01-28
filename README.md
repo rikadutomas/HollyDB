@@ -2,7 +2,7 @@
 Front End Publico e de Administracao para uma base de dados de Filmes.
 Modelo totalmente em SPA com injecoes JS por funcao.
 
-------  3Quotas  ----------------------
+3Quotas:
 Ricardo
 Luís
 Sandra
