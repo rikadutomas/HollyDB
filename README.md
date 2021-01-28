@@ -8,11 +8,9 @@ Sandra
 
 URL
 ---------------
-www
-	www.hollydb.tk
+www : www.hollydb.tk
 
-Admin
-	URL: admin.hollydb.tk
+Admin: admin.hollydb.tk
 
 Ficha Tecnica
 Programacao em Visual Studio Code
